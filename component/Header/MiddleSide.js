@@ -4,7 +4,7 @@ const MiddleSide = () => {
   return (
     <>
       <div className="w-[100%] lg:w-[60%]">
-        <div className="carousel w-full h-[100%]">
+        <div className="carousel w-full h-[100%] mx-auto">
           <div id="slide1" className="carousel-item relative w-full">
             <img
               src="https://ng.jumia.is/cms/0-6-anniversary/2023/initiatives/712x384.gif"
