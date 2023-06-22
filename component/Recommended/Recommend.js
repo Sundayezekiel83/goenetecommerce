@@ -33,11 +33,11 @@ const Recommend = () => {
           </div>
           <div className="carousel-item flex flex-col w-[130px] md:w-[180px]">
             <img
-              src="https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/refrigerators_300x240.png"
+              src="https://ng.jumia.is/cms/0-6-anniversary/2023/300x240v2.gif"
               alt="image"
               className="rounded-box"
             />
-            <span className="justify-center text-center">Phone and Tables</span>
+            <span className="justify-center text-center">anniversary</span>
           </div>
 
           <div className="carousel-item flex flex-col w-[130px] md:w-[180px]">
@@ -50,11 +50,11 @@ const Recommend = () => {
           </div>
           <div className="carousel-item flex flex-col w-[130px] md:w-[180px]">
             <img
-              src="https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/televisions_300x240.png"
+              src="https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/watches_300x240.png"
               alt="image"
               className="rounded-box"
             />
-            <span className="justify-center text-center">Phone and Tables</span>
+            <span className="justify-center text-center">Fridge</span>
           </div>
         </div>
       </div>
