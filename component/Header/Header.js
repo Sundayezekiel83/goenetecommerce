@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <>
       <div className="p-2 space-x-5 align-middle mx-auto flex justify-between">
-        <RightSide />
-        <MiddleSide />
         <LeftSide />
+        <MiddleSide />
+        <RightSide />
       </div>
     </>
   );
