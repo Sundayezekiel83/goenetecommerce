@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./Navigation/Navbar";
-import Header from "./Header/Header";
+import Footer from "./footer/Footer";
 
 const Layout = ({ children }) => {
   return (
     <>
       {" "}
       <Navbar />
-      {children}{" "}
+      {children} <Footer />
     </>
   );
 };

@@ -4,9 +4,12 @@ import { useRouter } from "next/router";
 import logo from "../../asset/brand (2).png";
 import Image from "next/image";
 import Cart from "../ShoppingCart/Cart";
+import { useSession, signIn, signOut } from "next-auth/react";
+import Person3Icon from "@mui/icons-material/Person3";
 
 const Navbar = () => {
   const router = useRouter();
+  const { data: session } = useSession();
   return (
     <>
       <div className="bg-appcolor-500 mb-3 ">
@@ -39,10 +42,29 @@ const Navbar = () => {
             placeholder="Search"
             className="input input-bordered input-warning lg:inline hidden md outline-none max-w-md w-full my-auto"
           />
+          {session ? (
+            <>
+              <p className="text-lg mt-3">
+                {" "}
+                <Person3Icon />
+                Hi, {session.user.name}
+              </p>
+              <button
+                onClick={() => signOut()}
+                className="btn btn-outline btn-warning hidden md:inline"
+              >
+                Sign Out
+              </button>
+            </>
+          ) : (
+            <button
+              onClick={() => signIn()}
+              className="btn btn-outline btn-warning hidden md:inline"
+            >
+              Login/SignUp
+            </button>
+          )}
 
-          <button className="btn btn-outline btn-warning hidden md:inline">
-            Login/SignUp
-          </button>
           <Cart />
         </div>
       </div>
