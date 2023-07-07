@@ -11,7 +11,7 @@ export default function categories({ products }) {
 }
 
 export async function getServerSideProps(context) {
-  const category = context.params.categories;
+  const category = context.params.category;
   console.log(category);
   const products = await fetchProductsByCategory(category);
 
