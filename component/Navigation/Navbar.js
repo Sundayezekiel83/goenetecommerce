@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-appcolor-500 mb-3 ">
-        <div className="mx-auto w-full align-middle md:max-w-7xl ">
+        <div className="mx-auto w-full align-middle md:max-w-5xl ">
           <img
             src="https://ng.jumia.is/cms/0-6-anniversary/2023/Brand-day/21-Diageo/JA-diageo-brands-top-strip.gif"
             alt="navimage"
@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="bg-white align-middle p-2 shadow-md">
         <div className="md:max-w-7xl mx-auto flex flex-row justify-between space-x-2">
           <span className="flex  align-middle space-x-2">
-            <span className=" md:hidden">
+            <span className="md:hidden">
               <ElementThree />
             </span>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered input-warning lg:inline hidden md outline-none max-w-md w-full my-auto"
+            className="input input-bordered input-warning lg:inline hidden  outline-none max-w-md w-full my-auto"
           />
           {session ? (
             <>

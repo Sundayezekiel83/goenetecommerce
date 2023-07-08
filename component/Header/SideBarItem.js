@@ -4,7 +4,7 @@ import React from "react";
 const SideBarItem = ({ icon, linkName, link, active }) => {
   return (
     <>
-      <div className="hoverEffect flex justify-start space-x-2 items-center hover:text-white hover:rounded-box hover:p-2 hover:bg-warning hover:cursor-pointer align-middle">
+      <div className="hoverEffect flex justify-start space-x-2 items-center hover:text-white hover:rounded-box hover:bg-warning hover:cursor-pointer align-middle">
         <Link href={`/categories/${link}`}>
           <span className="text-[0.1rem] ">{icon}</span>
           <span

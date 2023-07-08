@@ -4,7 +4,9 @@ import { fetchProductById } from "@/lib/Fetchdata";
 export default function ProductByID({ response }) {
   return (
     <>
-      <ProductDetails response={response} />
+      <div className="container px-10 bg-slate-100">
+        <ProductDetails response={response} />
+      </div>
     </>
   );
 }

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function categories({ products }) {
   return (
-    <div>
+    <div className="container">
       <CategoryDetails products={products} />
     </div>
   );

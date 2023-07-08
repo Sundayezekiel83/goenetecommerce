@@ -13,12 +13,16 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.5",
+    "@reduxjs/toolkit": "^1.9.5",
     "firebase": "^9.22.2",
     "next": "13.4.6",
     "next-auth": "^4.22.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-naira": "^1.2.1"
+    "react-naira": "^1.2.1",
+    "react-redux": "^8.1.1",
+    "react-select-states-and-lga-in-nigeria": "^2.1.2",
+    "redux": "^4.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

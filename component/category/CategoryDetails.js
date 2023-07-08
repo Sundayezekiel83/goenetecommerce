@@ -7,7 +7,7 @@ import Link from "next/link";
 const CategoryDetails = ({ products }) => {
   return (
     <>
-      <div className="px-10">
+      <div className="container px-10">
         {products.length <= 0 ? (
           <Errors />
         ) : (
@@ -28,9 +28,9 @@ const CategoryDetails = ({ products }) => {
                       <span className="hover:underline hover:cursor-pointer">
                         {product.title}
                       </span>
-                      <span className="font-bold hover:underline hover:cursor-pointer">
+                      <p className="font-bold hover:underline hover:cursor-pointer">
                         <Naira>{product.productPrice}</Naira>
-                      </span>
+                      </p>
                     </Link>
                   </div>
                 );
