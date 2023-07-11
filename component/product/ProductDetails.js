@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import BreadCumb from "../BreadCumb/BreadCumb";
 import Naira from "react-naira";
 import SelectFunction from "./SelectState";
 import Moredetails from "./Moredetails";
-import { toggleState } from "@/store/slice/cartSlice";
+import { AddCart, toggleState } from "@/store/slice/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const ProductDetails = ({ response }) => {
-  const { toggle } = useSelector((state) => state.cartSlice);
+  const { cart } = useSelector((state) => state.cartSlice);
   const dispatch = useDispatch();
-  console.log("the toggle", toggle);
   return (
     <>
       <BreadCumb
@@ -58,7 +57,7 @@ const ProductDetails = ({ response }) => {
               <div className="divider"></div>
               <button
                 className="btn btn-warning px-2 btn-block mt-5 mb-2"
-                onClick={() => dispatch(toggleState())}
+                onClick={() => dispatch(AddCart({ ...response, quantity: 1 }))}
               >
                 Add to Cart
               </button>
