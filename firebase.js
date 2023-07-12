@@ -3,13 +3,13 @@ import { getStorage } from "firebase/storage";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_apiKey,
-  authDomain: process.env.NEXT_PUBLIC_authDomain,
-  projectId: process.env.NEXT_PUBLIC_projectId,
-  storageBucket: process.env.NEXT_PUBLIC_storageBucket,
-  messagingSenderId: process.env.NEXT_PUBLIC_messagingSenderId,
-  appId: process.env.NEXT_PUBLIC_appId,
-  measurementId: process.env.NEXT_PUBLIC_measurementId,
+  apiKey: "AIzaSyDuEj8RjqgsL6w6JfZpNfoQ89c36iSnG8c",
+  authDomain: "geonetweb-32a58.firebaseapp.com",
+  projectId: "geonetweb-32a58",
+  storageBucket: "geonetweb-32a58.appspot.com",
+  messagingSenderId: "325672615643",
+  appId: "1:325672615643:web:a68b60bb182484f48f56fe",
+  measurementId: "G-BBHQC5NZE4",
 };
 
 // Initialize Firebase
