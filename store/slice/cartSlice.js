@@ -1,5 +1,11 @@
-import { GET_STORAGE_ITEM, SET_STORAGE_ITEM } from "@/Storage/Storage";
+import {
+  GET_STORAGE_ITEM,
+  REMOVE_STORAGE_ITEM,
+  SET_STORAGE_ITEM,
+} from "@/Storage/Storage";
 import { createSlice } from "@reduxjs/toolkit";
+import { Router, useRouter } from "next/router";
+import { toast } from "react-toastify";
 
 const initialState = {
   cart: GET_STORAGE_ITEM("cart") || [],
@@ -26,14 +32,22 @@ const cartSlice = createSlice({
         state.cart = [item, ...state.cart];
         SET_STORAGE_ITEM("cart", state.cart);
       }
+      toast.success(item.title + " " + "Added Successfully");
     },
 
     RemoveCart: (state, action) => {
       const item = state.cart.filter((item) => item.id !== action.payload);
       state.cart = item;
+      toast.error("Item Removed");
       SET_STORAGE_ITEM("cart", state.cart);
     },
 
+    Checkout: (state, action) => {
+      state.cart = [];
+      SET_STORAGE_ITEM("cart", state.cart);
+      toast.success("Your order have been Recieved");
+      action.payload.push("/");
+    },
     increaseQ: (state, action) => {
       const cartItems = state.cart.findIndex(
         (cartItem) => cartItem.id == action.payload
@@ -85,5 +99,11 @@ const cartSlice = createSlice({
 
 export default cartSlice.reducer;
 
-export const { AddCart, RemoveCart, increaseQ, decreaseQ, geteachTotals } =
-  cartSlice.actions;
+export const {
+  AddCart,
+  RemoveCart,
+  increaseQ,
+  decreaseQ,
+  geteachTotals,
+  Checkout,
+} = cartSlice.actions;

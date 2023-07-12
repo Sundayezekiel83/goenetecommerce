@@ -1,5 +1,10 @@
+import { REMOVE_STORAGE_ITEM } from "@/Storage/Storage";
 import CartItems from "@/component/ShoppingCart/CartItems";
-import { geteachTotals } from "@/store/slice/cartSlice";
+import {
+  Checkout,
+  geteachTotals,
+  handleFormChange,
+} from "@/store/slice/cartSlice";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
@@ -17,14 +22,6 @@ const cartPage = () => {
     Phonenumber: "",
     Address: "",
   });
-
-  const handleformChange = () => {
-    toast.info("Order Recieved", {
-      position: "top-right",
-    });
-
-    router.push("/");
-  };
 
   const dispatch = useDispatch();
 
@@ -145,7 +142,7 @@ const cartPage = () => {
 
                   <button
                     className="btn-warning btn-block btn btn-lg mt-2"
-                    onClick={() => handleformChange()}
+                    onClick={() => dispatch(Checkout(router))}
                   >
                     Check Out
                   </button>

@@ -43,8 +43,8 @@ const ElementThree = () => {
               />
               <SideBarItem
                 icon={<MicrowaveIcon />}
-                linkName={"Electronics"}
-                link="Electronics"
+                linkName={"appliances"}
+                link="appliances"
               />
               <SideBarItem
                 icon={<SmartphoneIcon />}
