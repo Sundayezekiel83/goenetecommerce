@@ -6,7 +6,7 @@ import LeftSide from "./LeftSide";
 const Header = () => {
   return (
     <>
-      <div className="p-2 space-x-5 align-middle mx-auto flex justify-between">
+      <div className="pt-2 px-2 w-full md:space-x-3 flex md:px-10">
         <LeftSide />
         <MiddleSide />
         <RightSide />

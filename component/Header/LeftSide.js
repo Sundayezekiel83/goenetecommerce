@@ -13,8 +13,8 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 const RightSide = () => {
   return (
     <>
-      <div className="hidden md:inline md:w-[28%] lg:w-[20%] ">
-        <div className="p-3 bg-white shadow-lg rounded-lg flex flex-col gap-3 h-[100%]">
+      <div className="hidden md:inline md:w-[40%] lg:w-[20%]">
+        <div className="p-1 bg-white shadow-2xl rounded-md items-start h-[100%]">
           <SideBarItem
             icon={<ShoppingBag />}
             linkName={"Supermarket"}

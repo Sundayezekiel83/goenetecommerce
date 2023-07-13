@@ -2,8 +2,8 @@ import React from "react";
 
 const HeaderStyle = ({ text, color }) => {
   return (
-    <div className={`${color} rounded-t-lg mt-4`}>
-      <span className="text-white text-2xl">{text}</span>
+    <div className={`${color}  mt-4`}>
+      <span className="text-black text-lg">{text} Top Deals</span>
     </div>
   );
 };

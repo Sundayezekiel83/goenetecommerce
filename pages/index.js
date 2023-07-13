@@ -5,8 +5,13 @@ import { fetchProducts, fetchProductsByCategory } from "@/lib/Fetchdata";
 
 export default function Home({ products }) {
   return (
-    <main className="md:max-w-7xl max-auto p-2">
+    <main className="md:max-w-7xl mx-auto p-2 bg-sky-50 shadow-md">
       <Header />
+      <Recommend />
+      <Recommend />
+      <Recommend />
+      <Recommend />
+      <Recommend />
       <Recommend />
       <Slider />
     </main>
